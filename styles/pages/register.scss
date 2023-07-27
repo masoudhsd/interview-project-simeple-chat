@@ -1,0 +1,41 @@
+.register {
+  &__header {
+    background: $primary;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #fefefe;
+    h1 {
+      margin: 10px 0;
+    }
+  }
+  button {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  input {
+    background: transparent;
+    &:focus {
+      background: transparent;
+    }
+  }
+  &__login {
+    @include flex-row;
+    font-size: 12px;
+    margin: 12px 0;
+    a {
+      color: $primary;
+      padding: 8px;
+    }
+  }
+  &__button {
+    padding-top: 40px;
+  }
+}

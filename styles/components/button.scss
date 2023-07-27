@@ -1,0 +1,22 @@
+.btn {
+  background: none;
+  border: none;
+  border-radius: 15px;
+
+  &__primary {
+    background: $primary;
+    padding: 15px 35px;
+  }
+
+  &__white {
+    background: transparent;
+    color: $primary;
+    padding: 15px 35px;
+  }
+  &__sm {
+    padding: 5px 25px;
+  }
+  &__lg {
+    width: 100%;
+  }
+}

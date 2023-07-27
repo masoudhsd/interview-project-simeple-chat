@@ -1,0 +1,22 @@
+.chat-box {
+  @include flex-row-around;
+  width: 100%;
+  color: gray;
+  padding: 10px 20px;
+
+  &__info-box {
+    margin-right: auto;
+    padding-left: 12px;
+  }
+  &__name {
+    color: #191919f2;
+  }
+  &__image {
+    // padding: 0 20px;
+  }
+  &__time {
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+}

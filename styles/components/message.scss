@@ -1,0 +1,23 @@
+.message {
+  margin: 16px 16px 0px auto;
+  position: relative;
+  width: max-content;
+  max-width: 85%;
+  white-space: break-spaces;
+  background: #b5e2e2;
+  padding: 20px;
+  border-radius: 20px;
+  @include flex-row;
+  justify-content: flex-start;
+  &__delivery {
+    position: absolute;
+    right: 8px;
+    bottom: 2px;
+
+    p {
+      color: gray;
+      font-size: 12px;
+    }
+    @include flex-row;
+  }
+}

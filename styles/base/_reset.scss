@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+body {
+  background: $background;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: block;
+}
+.header {
+  background: $primary;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+.input-box {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #191919;
+    -webkit-box-shadow: 0 0 0px 40rem #ffff inset;
+  }
+  margin: 20px;
+  position: relative;
+  label {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    background: #fefefe;
+    padding: 1px 30px;
+    color: $primary;
+    p {
+      position: absolute;
+      top: -10px;
+      left: 5px;
+    }
+  }
+}
+.input {
+  width: 100%;
+  border: 0.5px solid $primary;
+  border-radius: 16px;
+  padding: 20px;
+  &:focus {
+    outline: none;
+    background: white;
+  }
+  &:active {
+    background: white;
+  }
+}

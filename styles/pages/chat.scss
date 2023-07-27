@@ -1,0 +1,58 @@
+.chat {
+  @include flex-col;
+  background: $chatBackground;
+  height: 100vh;
+  &__default-text {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    text-align: center;
+  }
+
+  &__header {
+    height: 135px;
+    box-shadow: 0px 1px 20px 0px #00000026;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.search-input {
+  position: relative;
+  margin-top: 30px;
+  width: 80%;
+  margin: auto;
+  &__icon {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: gray;
+  }
+}
+.tabs {
+  color: #fefefe;
+  margin-bottom: 10px;
+  @include flex-row-around;
+  li {
+    &:focus {
+      font-weight: bolder;
+    }
+  }
+}
+
+.chat-footer {
+  @include flex-row-around;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #f9ffff;
+  height: 60px;
+  color: lightgray;
+  box-shadow: 0px -1px 20px 0px #0000001a;
+  svg {
+    font-size: 28px;
+  }
+
+  &__icon {
+    @include flex-col;
+  }
+}

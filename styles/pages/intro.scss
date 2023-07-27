@@ -1,0 +1,23 @@
+.col {
+  height: 100vh;
+  padding: 20px;
+  @include flex-col;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #191919d9;
+
+  button {
+    color: #fefefe;
+    font-size: 18px;
+  }
+
+  button:first-of-type {
+    margin-left: auto;
+  }
+
+  p {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}

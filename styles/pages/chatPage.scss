@@ -1,0 +1,50 @@
+.chat-page {
+  height: 100vh;
+  background-image: url(/background.png);
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 82px;
+    color: #fefefe;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    img {
+      margin: 0 10px;
+    }
+  }
+
+  &__icons {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+  }
+  &__footer {
+    @include flex-row-around;
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+  }
+  &__footer__icon {
+    @include flex-row;
+    background: $primary;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  &__footer__input {
+    width: 80%;
+    position: relative;
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
